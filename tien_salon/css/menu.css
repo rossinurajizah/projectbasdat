@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align:left;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.description {
+    padding: 50px 20px;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    float: left; /* Mengatur posisi paragraf di sebelah kiri */
+}
+
+.colored-hair-img {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat bingkai bulat */
+}
+
+.book-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #45a049;
+}

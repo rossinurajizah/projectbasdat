@@ -1,0 +1,450 @@
+:root {
+    --primary: #ffcb74;
+    --bg: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align:left;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.description {
+    padding: 50px 20px;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    float: left; /* Mengatur posisi paragraf di sebelah kiri */
+}
+
+.colored-hair-img {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat bingkai bulat */
+}
+
+.book-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-attachment: var(--bg);
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    min-height: 2000px;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1, 4rem 7%;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: top 0.3s;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo {
+    margin-left: 1.5rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #f3f3f3;
+}
+
+
+.navbar .navbar-logo span {
+    font-size: 1.5rem;
+    font-family: "Parisienne", sans-serif;
+    color: #ffcb74;
+}
+
+.navbar .navbar-nav a {
+    color: #f3f3f3;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 15px;
+    position:relative;
+
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: #f3f3f3;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #f3f3f3;
+}
+
+#menu {
+    display: none;
+}
+
+.navbar .navbar-extra #login {
+    margin-left: auto;
+    color: var(--bg);
+    margin-right: 1.5rem;
+}
+
+.navbar .navbar-extra #login:hover {
+    color: var(--primary);
+}
+/*hero section*/
+.hero {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to left, #7a60ff, #cd9ffa);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #f3f3f3 5%, #f3f3f3 10%, rgba(255, 255, 255, 0) 40%);
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	padding: 5rem;
+    position: relative;
+	margin-top:-180px;
+}
+
+.banner-text h2{
+    font-size: 4rem;
+    color: #f3f3f3;
+    --animate-delay: 0.5s;
+}
+
+.banner-text h6 {
+    margin-bottom: 90px;
+    color: #f3f3f3;
+    --animate-delay:0.5s;
+}
+.banner-text h6 a {
+    color: #ffcb74;
+    --animate-delay:0.3s;
+}
+.banner-text ul {
+	list-style: none;
+}
+.banner-text ul li {
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+}
+.banner-text ul li a {
+    display: block;
+}
+
+.hero .model {
+    display: flex;
+    align-items: center; /* Menyelaraskan gambar di tengah secara vertikal */
+    justify-content: center; /* Menyelaraskan gambar di tengah secara horizontal */
+    max-width: 60%; /* Atur ini sesuai kebutuhan untuk mengatur lebar gambar */
+    margin-top: -60px;
+    margin-right: 20px;
+}
+
+.hero .model img {
+    max-width: 100%; /* Mengatur agar gambar tidak melebihi lebar kontainer */
+    height: auto; /* Mengatur tinggi otomatis sesuai dengan lebar untuk menjaga aspek rasio */
+    max-width: 700px;
+}
+
+.hero_booking {
+    background-color: #ffcb74; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 15px 30px; /* Padding tombol */
+    border-radius: 30px; /* Sudut tombol */
+    font-size: 1rem; /* Ukuran font tombol */
+    text-decoration: none; /* Hapus dekorasi default */
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna tombol */
+    display: inline-block; /* Agar tombol tampil sebagai inline block */
+    cursor: pointer;
+}
+
+.hero_booking:hover {
+    background-color: #fff; /* Warna latar belakang tombol saat dihover */
+    color: #ffcb74; /* Warna teks tombol saat dihover */
+}
+
+.servicesbtn {
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen menjadi kolom */
+    align-items: center; /* Pusatkan elemen di tengah secara horizontal */
+    padding: 1.4rem;
+    max-width: 60rem;
+    text-align: center;
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.servicesbtn .services h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.button_booking span{
+    display: block;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    color: #99a6f9;
+    margin-top: 40px;
+}
+
+.button_booking {
+    display: flex; /* Mengubah tata letak menjadi flex */
+    flex-direction: column; /* Mengatur tata letak kolom */
+    justify-content: center; /* Mengatur agar konten berada di tengah secara vertikal */
+    align-items: center; /* Mengatur agar konten berada di tengah secara horizontal */
+    border-radius: 50%; /* Mengubah sudut menjadi bulat */
+    width: 75px; /* Sesuaikan ukuran dengan kebutuhan */
+    height: 75px; /* Sesuaikan ukuran dengan kebutuhan */
+    display: inline-block; /* Agar tampil secara berdampingan */
+    text-align: center; /* Pusatkan teks */
+    line-height: 100px; /* Sesuaikan dengan ukuran tombol */
+    background-color:#cd9ffa; /* Warna latar belakang */
+    margin: 65px; /* Sesuaikan jarak antar tombol */
+    text-decoration: none; /* Hapus dekorasi default */
+    background-size: 7rem;
+    background-position: center;
+}
+
+.services {
+    padding: 1.4rem;
+    max-width: 60rem;
+}
+
+.services h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #010101;
+    margin-bottom: 20px;
+}
+
+/* Pop-up styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup::-webkit-scrollbar {
+    display: none; 
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-open {
+    overflow: hidden;
+}
+
+/* Responsiveness */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav
+    {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+}
+
+/* HP */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.contact {
+    background-color: #fff;
+    height: 140vh;
+    max-width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contact-info {
+    min-width: fit-content;
+    width: 150vh;
+    padding: 2rem; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 25px;
+    background: #7a60ff;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    color: #fff; /* Ubah warna teks menjadi putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    margin: 23px 0px;
+}
+
+.contact-item i {
+    font-size: 20px;
+}
+
+.contact-item p {
+    line-height: 20px;
+    margin: 0;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Posisikan elemen-elemen dari atas */
+}
+
+.contact .col-lg-8 {
+    margin-bottom: 0; /* Hapus margin bottom agar tidak ada jarak terlalu besar antara elemen */
+}
+
+.contact-form {
+    margin-right: 2rem; /* Beri margin kanan agar ada ruang antara formulir kontak dan informasi kontak */
+}
